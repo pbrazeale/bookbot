@@ -10,3 +10,15 @@ def word_count(text):
 
     # print(text_list)
     return len(text_list)
+
+def char_count(text):
+    char_count = {}
+    text = text.lower()
+    for char in text:
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            char_count[char] = 1
+    
+    return char_count
+
