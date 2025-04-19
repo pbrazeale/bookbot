@@ -21,6 +21,7 @@ def char_sort(char_dict):
     
     sorted.sort(reverse=True, key=sort_on)
     # print(sorted)
+    return sorted
 
 
 def char_count(text):
@@ -32,5 +33,6 @@ def char_count(text):
         else:
             char_count[char] = 1
     
-    char_sort(char_count)
+    char_sorted = char_sort(char_count)
+    return char_sorted
 
