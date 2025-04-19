@@ -9,6 +9,6 @@ def print_report(word_count, char_dic):
         """
     )
     for char in char_dic:
-        print(f"{char_dic["char"]}: {char_dic["count"]}")
+        print(f"{char_dic[char]["char"]}: {char_dic[char]["count"]}")
     
     print("============= END ===============")
