@@ -8,7 +8,7 @@ def print_report(word_count, char_dic):
         --------- Character Count -------
         """
     )
-    for char in char_dic:
+    for char in range(char_dic):
         print(f"{char_dic[char]["char"]}: {char_dic[char]["count"]}")
     
     print("============= END ===============")
